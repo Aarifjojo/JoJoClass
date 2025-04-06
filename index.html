@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduHub - Your Complete Educational Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Added Google Sign-In API -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <!-- Replace the existing navbar with this -->
+    <nav class="navbar">
+        <a href="#home" class="logo">EduHub</a>
+        <button id="navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#subjects">Subjects</a></li>
+            <li><a href="#classes">Classes</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#free-courses">Free Courses</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#gk">GK</a></li>
+            <li><a href="#papers">Papers</a></li>
+            <li><a href="#resources">Resources</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <h1>Welcome to EduHub</h1>
+        <p>Your one-stop destination for complete education</p>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for courses, subjects...">
+            <button id="search-button"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <section id="subjects" class="section">
+        <h2>Academic Subjects</h2>
+        <div class="grid-container">
+            <div class="card">
+                <i class="fas fa-book"></i>
+                <h3>Mathematics</h3>
+                <p>Class 1-12</p>
+                <a href="https://www.khanacademy.org/math" target="_blank" class="btn">Explore</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-atom"></i>
+                <h3>Science</h3>
+                <p>Physics, Chemistry, Biology</p>
+                <a href="https://www.khanacademy.org/science" target="_blank" class="btn">Explore</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-language"></i>
+                <h3>Languages</h3>
+                <p>English, Hindi</p>
+                <a href="https://www.duolingo.com/" target="_blank" class="btn">Explore</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-landmark"></i>
+                <h3>Social Studies</h3>
+                <p>History, Geography, Civics</p>
+                <a href="https://www.khanacademy.org/humanities" target="_blank" class="btn">Explore</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="section">
+        <h2>Professional Courses</h2>
+        <div class="grid-container" id="course-container">
+            <div class="card">
+                <i class="fas fa-robot"></i>
+                <h3>Artificial Intelligence</h3>
+                <p>Learn AI fundamentals</p>
+                <a href="https://www.coursera.org/specializations/ai-for-everyone" target="_blank" class="btn">Enroll Now</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-database"></i>
+                <h3>Data Science</h3>
+                <p>Master data analytics</p>
+                <a href="https://www.edx.org/learn/data-science" target="_blank" class="btn">Enroll Now</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-file-excel"></i>
+                <h3>Excel & Tally</h3>
+                <p>Business essentials</p>
+                <a href="https://www.udemy.com/topic/excel/" target="_blank" class="btn">Enroll Now</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h3>Prompt Engineering</h3>
+                <p>Master AI prompting</p>
+                <a href="https://www.deeplearning.ai/short-courses/chatgpt-prompt-engineering-for-developers/" target="_blank" class="btn">Enroll Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="free-courses" class="section">
+        <h2>Free Courses</h2>
+        <div class="grid-container">
+            <div class="card">
+                <i class="fas fa-laptop-code"></i>
+                <h3>Web Development Basics</h3>
+                <p>HTML, CSS, JavaScript</p>
+                <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank" class="btn">Start Learning</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Mobile App Development</h3>
+                <p>Android fundamentals</p>
+                <a href="https://developer.android.com/courses" target="_blank" class="btn">Start Learning</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Digital Marketing</h3>
+                <p>SEO and social media</p>
+                <a href="https://learndigital.withgoogle.com/digitalgarage/course/digital-marketing" target="_blank" class="btn">Start Learning</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Google Certification</h3>
+                <p>Google Career Certificates</p>
+                <a href="https://grow.google/certificates/" target="_blank" class="btn">Start Learning</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="games" class="section">
+        <h2>Educational Games</h2>
+        <div class="grid-container">
+            <div class="card">
+                <i class="fas fa-puzzle-piece"></i>
+                <h3>Math Games</h3>
+                <a href="https://www.coolmathgames.com/" target="_blank" class="btn">Play Now</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-brain"></i>
+                <h3>Memory Games</h3>
+                <a href="https://www.memozor.com/memory-games" target="_blank" class="btn">Play Now</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-globe"></i>
+                <h3>Geography Quiz</h3>
+                <a href="https://online.seterra.com/en" target="_blank" class="btn">Play Now</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-spell-check"></i>
+                <h3>Spelling Bee</h3>
+                <a href="https://www.spellingtraining.com/" target="_blank" class="btn">Play Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="gk" class="section">
+        <h2>General Knowledge</h2>
+        <div class="grid-container">
+            <div class="card">
+                <i class="fas fa-history"></i>
+                <h3>History</h3>
+                <p>World and Indian history</p>
+                <a href="https://www.history.com/" target="_blank" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-flask"></i>
+                <h3>Science Facts</h3>
+                <p>Amazing discoveries</p>
+                <a href="https://www.nationalgeographic.com/science/" target="_blank" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-newspaper"></i>
+                <h3>Current Affairs</h3>
+                <p>Stay updated</p>
+                <a href="https://www.inshorts.com/en/read" target="_blank" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-trophy"></i>
+                <h3>Quiz Competition</h3>
+                <p>Test your knowledge</p>
+                <a href="https://quizizz.com/" target="_blank" class="btn">Take Quiz</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="papers" class="section">
+        <h2>Question Papers</h2>
+        <div class="class-selector">
+            <label for="class-select">Select Class:</label>
+            <select id="class-select">
+                <option value="">Select</option>
+                <option value="1">Class 1</option>
+                <option value="2">Class 2</option>
+                <!-- Add more options up to class 12 -->
+                <option value="12">Class 12</option>
+            </select>
+            <button id="load-papers" class="btn">Load Papers</button>
+        </div>
+        <div id="papers-container" class="grid-container">
+            <!-- Papers will be loaded here dynamically -->
+        </div>
+    </section>
+
+    <section id="classes" class="section">
+        <h2>Class-wise Learning</h2>
+        <div class="class-grid">
+            <a href="https://ncert.nic.in/textbook.php?aeen1=0-13" target="_blank" class="class-card">Class 1</a>
+            <a href="https://ncert.nic.in/textbook.php?been1=0-14" target="_blank" class="class-card">Class 2</a>
+            <a href="https://ncert.nic.in/textbook.php?ceen1=0-23" target="_blank" class="class-card">Class 3</a>
+            <a href="https://ncert.nic.in/textbook.php?deen1=0-24" target="_blank" class="class-card">Class 4</a>
+            <a href="https://ncert.nic.in/textbook.php?eeen1=0-18" target="_blank" class="class-card">Class 5</a>
+            <a href="https://ncert.nic.in/textbook.php?feen1=0-22" target="_blank" class="class-card">Class 6</a>
+            <a href="https://ncert.nic.in/textbook.php?geen1=0-19" target="_blank" class="class-card">Class 7</a>
+            <a href="https://ncert.nic.in/textbook.php?heen1=0-20" target="_blank" class="class-card">Class 8</a>
+            <a href="https://ncert.nic.in/textbook.php?iess3=0-10" target="_blank" class="class-card">Class 9</a>
+            <a href="https://ncert.nic.in/textbook.php?jess1=0-10" target="_blank" class="class-card">Class 10</a>
+            <a href="https://ncert.nic.in/textbook.php?keph1=0-7" target="_blank" class="class-card">Class 11</a>
+            <a href="https://ncert.nic.in/textbook.php?leph1=0-7" target="_blank" class="class-card">Class 12</a>
+        </div>
+    </section>
+
+    <section id="resources" class="section">
+        <h2>Learning Resources</h2>
+        <div class="grid-container">
+            <div class="card">
+                <i class="fas fa-book-open"></i>
+                <h3>E-Books</h3>
+                <p>Free educational books</p>
+                <a href="https://openlibrary.org/" target="_blank" class="btn">Browse</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-video"></i>
+                <h3>Video Lectures</h3>
+                <p>Expert explanations</p>
+                <a href="https://www.youtube.com/edu" target="_blank" class="btn">Watch</a>
+            </div>
+            <div class="card">
+                <i class="fas fa-file-pdf"></i>
+                <h3>PDF Notes</h3>
+                <p>Downloadable study material</p>
+                <a href="https://www.pdfdrive.com/education-books.html" target="_blank" class="btn">Download</a>
+            </div>
+            <div class="card">
+                <i class="fab fa-google"></i>
+                <h3>Google Scholar</h3>
+                <p>Academic research papers</p>
+                <a href="https://scholar.google.com/" target="_blank" class="btn">Research</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest educational resources and updates</p>
+        <div class="newsletter-form">
+            <input type="email" id="email-input" placeholder="Your email address">
+            <button id="subscribe-btn" class="btn">Subscribe</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>EduHub</h3>
+                <p>Your complete educational platform for students of all ages.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#subjects">Subjects</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#games">Games</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:contact@eduhub.com">contact@eduhub.com</a></p>
+                <p><i class="fas fa-phone"></i> <a href="tel:+911234567890">+91 1234567890</a></p>
+                <p><i class="fas fa-map-marker-alt"></i> <a href="https://maps.google.com" target="_blank">Find us on Google Maps</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EduHub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
